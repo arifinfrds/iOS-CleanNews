@@ -14,6 +14,10 @@
 		92E1488223B4EE9D002A7248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E1488123B4EE9D002A7248 /* Assets.xcassets */; };
 		92E1488523B4EE9D002A7248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E1488323B4EE9D002A7248 /* LaunchScreen.storyboard */; };
 		92E1489023B4EE9D002A7248 /* CleanNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1488F23B4EE9D002A7248 /* CleanNewsTests.swift */; };
+		C69BA5DC23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */; };
+		C69BA5DD23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */; };
+		C69BA5EA23B5E0AE00A9E1F8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */; };
+		C69BA5EB23B5E0AE00A9E1F8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		92E1488B23B4EE9D002A7248 /* CleanNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E1488F23B4EE9D002A7248 /* CleanNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanNewsTests.swift; sourceTree = "<group>"; };
 		92E1489123B4EE9D002A7248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +85,13 @@
 		92E1487723B4EE9C002A7248 /* CleanNews */ = {
 			isa = PBXGroup;
 			children = (
-				92E1487823B4EE9C002A7248 /* AppDelegate.swift */,
-				92E1487A23B4EE9C002A7248 /* SceneDelegate.swift */,
 				92E1487C23B4EE9C002A7248 /* ViewController.swift */,
-				92E1487E23B4EE9C002A7248 /* Main.storyboard */,
-				92E1488123B4EE9D002A7248 /* Assets.xcassets */,
-				92E1488323B4EE9D002A7248 /* LaunchScreen.storyboard */,
-				92E1488623B4EE9D002A7248 /* Info.plist */,
+				C69BA5D323B5B76000A9E1F8 /* Application */,
+				C69BA5D523B5B76F00A9E1F8 /* Data */,
+				C69BA5D623B5B77600A9E1F8 /* Domain */,
+				C69BA5D723B5B78000A9E1F8 /* Infrastructure */,
+				C69BA5D823B5B78900A9E1F8 /* Presentation */,
+				C69BA5D423B5B76800A9E1F8 /* SupportingFile */,
 			);
 			path = CleanNews;
 			sourceTree = "<group>";
@@ -97,6 +103,152 @@
 				92E1489123B4EE9D002A7248 /* Info.plist */,
 			);
 			path = CleanNewsTests;
+			sourceTree = "<group>";
+		};
+		C69BA5D323B5B76000A9E1F8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				92E1487823B4EE9C002A7248 /* AppDelegate.swift */,
+				92E1487A23B4EE9C002A7248 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C69BA5D423B5B76800A9E1F8 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				92E1488623B4EE9D002A7248 /* Info.plist */,
+				92E1488123B4EE9D002A7248 /* Assets.xcassets */,
+				92E1488323B4EE9D002A7248 /* LaunchScreen.storyboard */,
+				92E1487E23B4EE9C002A7248 /* Main.storyboard */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		C69BA5D523B5B76F00A9E1F8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5DE23B5DDDE00A9E1F8 /* Network */,
+				C69BA5DF23B5DDEC00A9E1F8 /* PersistanceStorage */,
+				C69BA5E123B5DE1400A9E1F8 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C69BA5D623B5B77600A9E1F8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E223B5DE3600A9E1F8 /* Entity */,
+				C69BA5E423B5DE4900A9E1F8 /* Interface */,
+				C69BA5E323B5DE4100A9E1F8 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C69BA5D723B5B78000A9E1F8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5DA23B5C18500A9E1F8 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		C69BA5D823B5B78900A9E1F8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E823B5E00E00A9E1F8 /* Scene */,
+				C69BA5E623B5DFEC00A9E1F8 /* Utility */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C69BA5DA23B5C18500A9E1F8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C69BA5DE23B5DDDE00A9E1F8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C69BA5DF23B5DDEC00A9E1F8 /* PersistanceStorage */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E023B5DDFA00A9E1F8 /* UserDefaultStorage */,
+			);
+			path = PersistanceStorage;
+			sourceTree = "<group>";
+		};
+		C69BA5E023B5DDFA00A9E1F8 /* UserDefaultStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefaultStorage;
+			sourceTree = "<group>";
+		};
+		C69BA5E123B5DE1400A9E1F8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C69BA5E223B5DE3600A9E1F8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C69BA5E323B5DE4100A9E1F8 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C69BA5E423B5DE4900A9E1F8 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E523B5DF8600A9E1F8 /* Repository */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		C69BA5E523B5DF8600A9E1F8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C69BA5E623B5DFEC00A9E1F8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E723B5E00100A9E1F8 /* Extension */,
+				C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C69BA5E723B5E00100A9E1F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C69BA5E823B5E00E00A9E1F8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +353,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E1487D23B4EE9C002A7248 /* ViewController.swift in Sources */,
+				C69BA5EA23B5E0AE00A9E1F8 /* Observable.swift in Sources */,
+				C69BA5DC23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */,
 				92E1487923B4EE9C002A7248 /* AppDelegate.swift in Sources */,
 				92E1487B23B4EE9C002A7248 /* SceneDelegate.swift in Sources */,
 			);
@@ -211,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E1489023B4EE9D002A7248 /* CleanNewsTests.swift in Sources */,
+				C69BA5EB23B5E0AE00A9E1F8 /* Observable.swift in Sources */,
+				C69BA5DD23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -363,8 +519,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V6T249GHKX;
-				INFOPLIST_FILE = CleanNews/Info.plist;
+				DEVELOPMENT_TEAM = 5U7M39KWXM;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanNews/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.arifnfrds.CleanNews;
 				PRODUCT_NAME = "Clean News";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -381,8 +537,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V6T249GHKX;
-				INFOPLIST_FILE = CleanNews/Info.plist;
+				DEVELOPMENT_TEAM = 5U7M39KWXM;
+				INFOPLIST_FILE = "$(SRCROOT)/CleanNews/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.arifnfrds.CleanNews;
 				PRODUCT_NAME = "Clean News";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
