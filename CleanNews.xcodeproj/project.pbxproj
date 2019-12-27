@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92A1D65A23B62B54005CF690 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1D65923B62B54005CF690 /* LoadingViewController.swift */; };
 		92E1487923B4EE9C002A7248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1487823B4EE9C002A7248 /* AppDelegate.swift */; };
 		92E1487B23B4EE9C002A7248 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1487A23B4EE9C002A7248 /* SceneDelegate.swift */; };
 		92E1487D23B4EE9C002A7248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1487C23B4EE9C002A7248 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92A1D65923B62B54005CF690 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		92E1487523B4EE9C002A7248 /* Clean News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E1487823B4EE9C002A7248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92E1487A23B4EE9C002A7248 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92A1D65823B62B33005CF690 /* CleanNewsUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				92A1D65923B62B54005CF690 /* LoadingViewController.swift */,
+			);
+			path = CleanNewsUIComponents;
+			sourceTree = "<group>";
+		};
 		92E1486C23B4EE9C002A7248 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		C69BA5D823B5B78900A9E1F8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				92A1D65823B62B33005CF690 /* CleanNewsUIComponents */,
 				C69BA5E823B5E00E00A9E1F8 /* Scene */,
 				C69BA5E623B5DFEC00A9E1F8 /* Utility */,
 			);
@@ -357,6 +368,7 @@
 				C69BA5DC23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */,
 				92E1487923B4EE9C002A7248 /* AppDelegate.swift in Sources */,
 				92E1487B23B4EE9C002A7248 /* SceneDelegate.swift in Sources */,
+				92A1D65A23B62B54005CF690 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U7M39KWXM;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanNews/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanNews/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U7M39KWXM;
-				INFOPLIST_FILE = "$(SRCROOT)/CleanNews/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CleanNews/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
