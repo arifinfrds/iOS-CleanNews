@@ -14,6 +14,10 @@
 		92E1488223B4EE9D002A7248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E1488123B4EE9D002A7248 /* Assets.xcassets */; };
 		92E1488523B4EE9D002A7248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E1488323B4EE9D002A7248 /* LaunchScreen.storyboard */; };
 		92E1489023B4EE9D002A7248 /* CleanNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1488F23B4EE9D002A7248 /* CleanNewsTests.swift */; };
+		C69BA5DC23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */; };
+		C69BA5DD23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */; };
+		C69BA5EA23B5E0AE00A9E1F8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */; };
+		C69BA5EB23B5E0AE00A9E1F8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 		92E1488B23B4EE9D002A7248 /* CleanNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E1488F23B4EE9D002A7248 /* CleanNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanNewsTests.swift; sourceTree = "<group>"; };
 		92E1489123B4EE9D002A7248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,7 @@
 				C69BA5D623B5B77600A9E1F8 /* Domain */,
 				C69BA5D723B5B78000A9E1F8 /* Infrastructure */,
 				C69BA5D823B5B78900A9E1F8 /* Presentation */,
-				C69BA5D423B5B76800A9E1F8 /* SupportingFiles */,
+				C69BA5D423B5B76800A9E1F8 /* SupportingFile */,
 			);
 			path = CleanNews;
 			sourceTree = "<group>";
@@ -108,7 +114,7 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		C69BA5D423B5B76800A9E1F8 /* SupportingFiles */ = {
+		C69BA5D423B5B76800A9E1F8 /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
 				92E1488623B4EE9D002A7248 /* Info.plist */,
@@ -116,12 +122,15 @@
 				92E1488323B4EE9D002A7248 /* LaunchScreen.storyboard */,
 				92E1487E23B4EE9C002A7248 /* Main.storyboard */,
 			);
-			path = SupportingFiles;
+			path = SupportingFile;
 			sourceTree = "<group>";
 		};
 		C69BA5D523B5B76F00A9E1F8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C69BA5DE23B5DDDE00A9E1F8 /* Network */,
+				C69BA5DF23B5DDEC00A9E1F8 /* PersistanceStorage */,
+				C69BA5E123B5DE1400A9E1F8 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -129,6 +138,9 @@
 		C69BA5D623B5B77600A9E1F8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C69BA5E223B5DE3600A9E1F8 /* Entity */,
+				C69BA5E423B5DE4900A9E1F8 /* Interface */,
+				C69BA5E323B5DE4100A9E1F8 /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -136,6 +148,7 @@
 		C69BA5D723B5B78000A9E1F8 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				C69BA5DA23B5C18500A9E1F8 /* Network */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -143,8 +156,99 @@
 		C69BA5D823B5B78900A9E1F8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C69BA5E823B5E00E00A9E1F8 /* Scene */,
+				C69BA5E623B5DFEC00A9E1F8 /* Utility */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C69BA5DA23B5C18500A9E1F8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5DB23B5C1CE00A9E1F8 /* NetworkConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C69BA5DE23B5DDDE00A9E1F8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C69BA5DF23B5DDEC00A9E1F8 /* PersistanceStorage */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E023B5DDFA00A9E1F8 /* UserDefaultStorage */,
+			);
+			path = PersistanceStorage;
+			sourceTree = "<group>";
+		};
+		C69BA5E023B5DDFA00A9E1F8 /* UserDefaultStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefaultStorage;
+			sourceTree = "<group>";
+		};
+		C69BA5E123B5DE1400A9E1F8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C69BA5E223B5DE3600A9E1F8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C69BA5E323B5DE4100A9E1F8 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C69BA5E423B5DE4900A9E1F8 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E523B5DF8600A9E1F8 /* Repository */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		C69BA5E523B5DF8600A9E1F8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C69BA5E623B5DFEC00A9E1F8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C69BA5E723B5E00100A9E1F8 /* Extension */,
+				C69BA5E923B5E0AE00A9E1F8 /* Observable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C69BA5E723B5E00100A9E1F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C69BA5E823B5E00E00A9E1F8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +353,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E1487D23B4EE9C002A7248 /* ViewController.swift in Sources */,
+				C69BA5EA23B5E0AE00A9E1F8 /* Observable.swift in Sources */,
+				C69BA5DC23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */,
 				92E1487923B4EE9C002A7248 /* AppDelegate.swift in Sources */,
 				92E1487B23B4EE9C002A7248 /* SceneDelegate.swift in Sources */,
 			);
@@ -259,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E1489023B4EE9D002A7248 /* CleanNewsTests.swift in Sources */,
+				C69BA5EB23B5E0AE00A9E1F8 /* Observable.swift in Sources */,
+				C69BA5DD23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
