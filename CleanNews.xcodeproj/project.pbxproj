@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92A1D65A23B62B54005CF690 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1D65923B62B54005CF690 /* LoadingViewController.swift */; };
+		92A1D65C23B62C60005CF690 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1D65B23B62C60005CF690 /* UIViewController+Child.swift */; };
 		92E1487923B4EE9C002A7248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1487823B4EE9C002A7248 /* AppDelegate.swift */; };
 		92E1487B23B4EE9C002A7248 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1487A23B4EE9C002A7248 /* SceneDelegate.swift */; };
 		92E1487D23B4EE9C002A7248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E1487C23B4EE9C002A7248 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		92A1D65923B62B54005CF690 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		92A1D65B23B62C60005CF690 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		92E1487523B4EE9C002A7248 /* Clean News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E1487823B4EE9C002A7248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92E1487A23B4EE9C002A7248 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				92A1D65923B62B54005CF690 /* LoadingViewController.swift */,
+				92A1D65B23B62C60005CF690 /* UIViewController+Child.swift */,
 			);
 			path = CleanNewsUIComponents;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			files = (
 				92E1487D23B4EE9C002A7248 /* ViewController.swift in Sources */,
 				C69BA5EA23B5E0AE00A9E1F8 /* Observable.swift in Sources */,
+				92A1D65C23B62C60005CF690 /* UIViewController+Child.swift in Sources */,
 				C69BA5DC23B5C1CE00A9E1F8 /* NetworkConfig.swift in Sources */,
 				92E1487923B4EE9C002A7248 /* AppDelegate.swift in Sources */,
 				92E1487B23B4EE9C002A7248 /* SceneDelegate.swift in Sources */,
